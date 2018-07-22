@@ -1,0 +1,20 @@
+
+#tuples use ()
+names=["ethna", "connor", "bailey"]
+for i in range(0, len(names)):
+    name=names[i]
+    if name.istitle():
+        print name
+    else:
+        names.remove(name)
+        names.insert(i, name.title())
+        print names[i]
+
+if "ethan" not in names:
+    print "not in names"
+
+if "connor" in names:
+    names.remove("connor")
+elif "Connor" in names:
+    names.remove("Connor")
+print names
